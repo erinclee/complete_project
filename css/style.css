@@ -63,7 +63,7 @@ img {
   float: none;
   display: inline-block;
   height: 50px;
-} */
+} 
   
 nav li {
   display: inline-block;
@@ -357,7 +357,6 @@ button {
 }
 
 
-/* Tablet View */
 @media only screen and (max-width: 900px) {
   body {
     background-image: linear-gradient(to bottom right, rgb(137, 231, 170), rgb(138, 183, 78));
@@ -409,7 +408,7 @@ button {
   }
 }
 
-/* Mobile View */
+
 @media only screen and (max-width: 650px) {
   h1 {
     font-size: 40px;
