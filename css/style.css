@@ -17,16 +17,16 @@ body {
 h1{
   color: #00004d;
   text-align: center;
-  font-size: 80px;
+  font-size: 75px;
   font-family: "San Serif";
-  animation: 3s linear 1s;
+  animation: 3s linear 5s;
     
 }
 
 h2{
   color:  #00004d;
   text-align: center;
-  font-size: 75px;
+  font-size: 70px;
   font-family: "Didot";
 }
 
@@ -38,7 +38,7 @@ h2:hover {
 h3{
   color:  #00004d;
   text-align: center;
-  font-size: 70px;
+  font-size: 65px;
   font-family: "Didot"
 }
 
@@ -58,11 +58,12 @@ img {
 }
 
  li{
-  font-size:20px;
+  font-size:18px;
   font-family: "Didot";
   float: none;
   display: inline-block;
   height: 50px;
+  margin-bottom: 10px;
 } 
   
 nav li {
@@ -89,20 +90,21 @@ nav a {
   transition: background-color 0.3s ease-in-out;
 }
 
+nav a:hover {
+  transform: scale(2);  
+  color: #fff;  
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;  
+}
+
 nav a:hover,
 nav .current-page {
   background-color: #3c763d;
 }
 
-nav a:hover {
-  color: #fff;
-}
 
 nav .current-page {
   background-color: #3c763d;
 }
-
-
 
 
 .image-item img {
@@ -123,13 +125,42 @@ a{
 
 
 
-ul{
-  list-style-type: none;
-  margin: 0;
+ul,
+ol {
+  text-align: center;
   padding: 0;
-  overflow: hidden;
+  margin: 0;
 }
 
+li {
+  font-size: 18px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: '\2022'; /* Unicode character for bullet point */
+  color: #3b5b5e; /* Color of the bullet point */
+  font-size: 24px; /* Adjust the size of the bullet point */
+  margin-right: 8px; /* Adjust the spacing between the bullet point and text */
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol li::before {
+  content: counters(item, '.') ' '; /* Numbered bullet point */
+  counter-increment: item;
+  color: #3b5b5e; /* Color of the bullet point */
+  font-size: 24px; /* Adjust the size of the bullet point */
+  margin-right: 8px; /* Adjust the spacing between the bullet point and text */
+}
 
 #skip {
   position: absolute;
