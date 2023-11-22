@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
     <link rel="icon" href="images/images/dogicon.ico">
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.5s, color 0.5s;
+        }
 
-    <title>Pets</title>
+        .dark-mode {
+            background-image: url("https://t4.ftcdn.net/jpg/02/86/37/57/360_F_286375793_tMNCezCxZVJMzXVlunBoKI1JWP72cE9L.jpg");
+        }
+
+        .toggle-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: solid gray;
+            border-radius: 4px;
+            margin: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main" id="skip" tabindex="0">Skip to Main Content</a>
     <nav>
         <ul>
-            <li> <a href="index.html" class="current-page" >Pets</a></li>
+            <li> <a href="index.html" class="current-page">Pets</a></li>
             <li> <a href="travel.html">Travel</a></li>
             <li> <a href="recipes.html">Recipes</a></li>
         </ul>
-       <style>
-            body {
-                background-color: #fff;
-                color: #000;
-                transition: background-color 0.5s, color 0.5s;
-            }
-    
-            .dark-mode {
-                background-image:url("https://t4.ftcdn.net/jpg/02/86/37/57/360_F_286375793_tMNCezCxZVJMzXVlunBoKI1JWP72cE9L.jpg");
-    
-            }
-
-
-    
-            .toggle-btn {
-                padding: 10px 20px;
-                font-size: 16px;
-                cursor: pointer;
-                border: solid gray;
-                border-radius: 4px;
-                margin: 5px;
-            }
-        </style>
         <button class="toggle-btn" onclick="toggleDarkMode()">Click for Dark Mode</button>
-
-        <script>
-            function toggleDarkMode() {
-                const body = document.body;
-                body.classList.toggle('dark-mode');
-            }
-        </script>
     </nav>
-    </head>
-    <body>
+
+    <script>
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+    }
+        </script>
+    
+
     <main id = "main">
         <div>
             <h2>River</h2>
@@ -66,7 +63,7 @@
             <p> River is obsessed with my mom. My mom is the one who mostly walks him and gives him treats. 
                 Anywhere my mom goes, River follows. If she's gone for 2 minutes, he will frantically search the house 
                 for her. Although he likes being with people, he hates being cuddled or held. </p>
-
+            </div>
 
             <h3>Photo Gallery </h3>
             <div class="image-grid">
@@ -121,6 +118,7 @@
                 <p>Carlos has a sister named Einstein. We did not discover the genders of our pet birds until years 
                     after we named them. At night, Carlos always sleeps on her favorite yellow swing and will wake up
                      in the same spot every morning in the upstairs of her cage ready to come out and play.</p>
+                </div>
                 <h3>Photo Gallery</h3>
                 <div class="image-grid">
                     <div class="image-item">
@@ -158,8 +156,7 @@
                         <div class="image-grid"> 
                         <div class="image-item">
                             <img src="images/images/Dollar2.jpg" 
-                        alt="Black, white, and brown australian shepherd in a photograph with a certificate in front of him. 
-                        " width="200"/> </div>
+                        alt="Black, white, and brown australian shepherd in a photograph with a certificate in front of him." width="200"/> </div>
                         <div class="image-item"> 
                         <img src="images/images/Dollar3.jpg" 
                         alt="Black, white, and brown australian shepherd laying down on his back, exposing his underside. " width="200"/>
